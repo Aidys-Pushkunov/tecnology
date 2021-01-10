@@ -408,7 +408,7 @@ body {
 }
 
 .gallery img:hover {
-	transform: scale(1.09);
+	transform: scale(1.19);
 	filter: brightness(100%);
 }
 
