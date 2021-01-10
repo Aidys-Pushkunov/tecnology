@@ -245,6 +245,71 @@ body {
 	background-color: #ffd562;	
 }
 
+/* хобби */
+
+
+.my-hobby {
+	display: flex;
+	justify-content: space-around;
+	background-color:  #f0f0f0;
+}
+.block-hobby {
+	margin: 100px 0px 100px 0px;
+	border-radius: 10px;
+	width: 400px;
+	height: 500px;
+	background-color: white;
+	overflow: hidden;
+}
+
+.block-hobby h2 {
+	font-size: 30px;
+	text-align: center;
+	color: #fa4150;
+	font-family: 'Yellowtail', cursive;
+}
+
+.block-hobby p {
+	margin: 0 10px 0 10px;
+	font-size: 25px;
+}
+
+.image-hobby {
+	margin: 100px 0 100px 0;
+	overflow: hidden;
+	border-radius: 10px;
+	width: 50%;
+	min-width: 400px;
+	height: 500px;
+	transition: .4s;
+}
+
+.image-hobby img {
+	width: 100%;
+}
+
+.image-hobby:hover {
+	transform: scale(1.02);
+}
+
+.hobby_photo {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 50px; 
+}
+
+.hobby_photo img {
+	border-radius: 10px;
+	transition: .3s;
+}
+
+.hobby_photo img:hover {
+	transform: scale(1.02);
+}
+
+
+
+
 /* цитаты */
 
 .quote {
@@ -255,7 +320,7 @@ body {
 
 .blockquote-6 {
     border-left: 6px solid #BFE2FF;
-    font-size: 20px;
+    font-size: 30px;
     font-style: italic;
     margin: 16px;
     margin-bottom: 100px;
@@ -278,14 +343,14 @@ body {
     top: 50%;
     left: -20px;
     color: #337AB7;
-    font-size: 50px;
+    font-size: 70px;
     font-family: Times, sans-serif;
     font-weight: bold;
     line-height: 30px;    
 }
 .blockquote-6 cite {
     color: #337AB7;
-    font-size: 15px;
+    font-size: 25px;
     padding-top: 10px;
     display: block;
     text-align: right;
