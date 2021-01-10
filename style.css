@@ -1,0 +1,413 @@
+html {
+	position: relative;
+	height: 100%;
+}
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	max-width: 1366px;
+	overflow-x: hidden; 
+	height: 100%;
+}
+
+/* header */
+
+.header {
+	height: 100%;
+}
+
+.header-menu {
+	display: block;
+	position: fixed;
+	top: 0;
+	margin: 0;
+	z-index: 10;
+	border: 1px solid #f2bf34;
+	background-color: #f2bf34;
+	max-width: 1364px;
+	width: 100%;
+	height: 55px;
+}
+
+
+.header-menu ul {
+	display: none;
+	overflow: auto;
+	overflow-x: hidden;
+	margin-top: 56px;
+	margin-left: -41px;
+	height: 400px;
+	width: 300px;
+
+
+}
+
+.header-menu .active {
+	background-color: #ffd562; 
+	color: black;
+}
+
+.header-menu ul::-webkit-scrollbar {
+    width: 7px;
+    background-color: #ffd562;
+}
+
+.header-menu ul::-webkit-scrollbar-thumb {
+    background-color: #e0a307;
+}
+
+.header-menu a:hover {
+	background-color: #ffd562;
+	color: black;
+}
+
+.header-menu li {
+	list-style: none;
+}
+
+.header-menu a {
+	display: block;
+	padding: 25px 25px;
+	background-color: #f2bf34;
+	margin-right: -5px;
+	margin-left: 0;
+	text-wrap: no-wrap;
+	transition: .2s;
+
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'Mukta', sans-serif;
+}
+
+.button {
+	display: block;
+	color: white;
+	background-color: #f2bf34;
+	border-style: none;
+	position: absolute;
+	left: -1px;
+	top: -1px;
+	outline: none;
+	padding: 12px 22px;
+	font-size: 25px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #ffd562;
+}
+
+.header-img img {	
+	position: absolute;
+	border-image-repeat: none;
+	max-width: 100%; 
+}
+
+.header-img h1 {
+	position: relative;
+	font-size: 70px;
+	top: 160px; 
+	text-align: center;
+	color: #fa4150;
+	font-family: 'Yellowtail', cursive;
+}
+
+.pugovka img{
+	position: absolute;
+	top: 5px;
+	width: 40px;
+	left: 95%;
+
+	animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.pugovka img:last-child{
+	left: 91%; 
+}
+
+@keyframes rotation {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+
+/* biography */
+
+.main {
+	height: 100%;
+}
+
+.biography {
+	display: flex;
+	justify-content: center;
+   	margin-top: 100px;
+   	height: 1000px;
+	background-color: #f0f0f0;
+}
+
+.biography ul {
+	font-size: 10px;
+} 
+
+.biography p {
+	margin-top: -30px;
+}
+
+.image {
+
+	left: 70px;	
+	margin-top: 500px;
+	margin-right: 35px;
+	min-width: 350px;
+	height: 400px;
+	background-image: url(img/teacher.JPG);
+	background-image-repeat: none;
+	border-radius: 10px;
+	transition: .7s;
+}
+
+.image:hover {
+	transform: scale(1.02);
+}
+
+.block {
+
+	margin-top: 500px;	
+	margin-left: 35px;
+	word-wrap: break-word;
+	left: 60px;
+	width: 60%;
+	overflow-x:hidden;
+	height: 400px;
+	background-color: white;
+	border-radius: 10px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.block img {
+	display: block;
+	margin: 10px 710px;
+	width: 30px;
+	border-image-repeat: repeat;
+	transition: .8s;
+}
+
+.block img:hover {
+	transform: rotate(360deg);
+}
+
+.block h2 {
+	text-align: center;
+}
+
+.block h3 {
+	display: block;
+	margin-top: -15px;
+	text-align: center;
+}
+
+.block p {
+	padding: 17px 25px;
+}
+
+.block ul { 
+	font-size: 13px;
+	margin: -20px 10px;
+}
+
+.back-color {
+	background-color: #f0f0f0;
+}
+
+
+.slaider {
+	display: flex;
+	justify-content: space-between;
+}
+
+.slaider button {
+	color: black;	
+	font-weight: bold;
+	background-color: #f2bf34;
+}
+
+.slaider button:hover {
+	background-color: #ffd562;	
+}
+
+/* цитаты */
+
+.quote {
+	display: block;
+	margin: 30px auto;
+	width: 57%;
+}
+
+.blockquote-6 {
+    border-left: 6px solid #BFE2FF;
+    font-size: 20px;
+    font-style: italic;
+    margin: 16px;
+    margin-bottom: 100px;
+    padding: 16px 24px;
+    position: relative;
+}
+.blockquote-6:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -6px;
+    height: 40px;
+    background-color: #fff;
+    width: 6px;
+    margin-top: -1em;
+}
+.blockquote-6:after {
+    content: "”";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    color: #337AB7;
+    font-size: 50px;
+    font-family: Times, sans-serif;
+    font-weight: bold;
+    line-height: 30px;    
+}
+.blockquote-6 cite {
+    color: #337AB7;
+    font-size: 15px;
+    padding-top: 10px;
+    display: block;
+    text-align: right;
+}
+
+/* our acive новая страница */
+
+.our_achive {
+	width: 1000px
+	margin: 0 auto;
+}
+
+.our_achive h2 {
+	text-align: center;
+	margin: 100px 100px 10px 100px;  
+	color: #fa4150; 
+	font-family: 'Yellowtail', cursive;
+	font-size: 40px;
+}
+
+.our_achive img {
+	width: 150px;
+	margin: 10px 5px 70px 5px;
+	transition: .7s;
+	filter: brightness(90%);
+}
+
+.our_achive img:hover {
+	transform: scale(1.09);
+	filter: brightness(100%);
+}
+
+
+
+/* Галерея (новая Страница)*/
+
+.gallery {
+
+	margin: 0 auto;
+}
+
+.gallery h3 {
+	font-size: 40px;
+	text-align: center;
+	color: #fa4150; 
+	font-family: 'Yellowtail', cursive;
+	padding-top: 40px;
+}
+
+.gallery img {
+	width: 250px;
+	margin: 30px 30px 80px 30px;
+	transition: .7s;
+	filter: brightness(90%);
+}
+
+.gallery img:hover {
+	transform: scale(1.09);
+	filter: brightness(100%);
+}
+
+/*progects new str*/
+
+.progects {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 100%;	
+	padding: 10px 50px 100px 100px; 
+}
+
+.progects a {
+	text-decoration: none;
+	list-style: none;
+	font-size: 15px;	
+	color: #2d36e3;
+	word-break: break-all
+
+	transition: .1s;
+}
+
+.progects a:visited {
+	color: red;
+}
+
+.p-h2 {
+	margin: 70px auto;
+	text-align: center;
+	color: #fa4150; 
+	font-family: 'Yellowtail', cursive;
+	font-size: 35px;
+}
+
+.progects a:hover {
+	color: black;
+}
+
+.progects img {
+	
+	margin-top: 25px;
+	transition: .1s;
+}
+
+.progects img:hover {
+	transform: scale(1.01);
+}
+
+
+/* footer */
+
+footer {
+	margin-top: 140%;
+	width: 100%;
+	max-width: 1366px;
+	color: black;
+	text-align: center;
+	max-height: 50px;
+	height: 100%;
+	background-color: #f2bf34; 
+}
+
+.copy {
+	padding: 15px;
+}
+
